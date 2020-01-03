@@ -1,0 +1,58 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card rounded-0">
+                        <div class="card-header">
+                            <h3 class="mb-0">Pick your food!</h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>Pick your Menu</label>
+                                    <select class="form-control">
+                                      <option>Big Tasty Menu</option>
+                                      <option>Big Mac Menu</option>
+                                      <option>Nugget Menu</option>
+                                    </select>
+                                  </div>
+                                <div class="form-group">
+                                    <label>Fries:</label>
+                                    <select class="form-control">
+                                      <option>Small</option>
+                                      <option>Medium</option>
+                                      <option>Large</option>
+                                    </select>
+                                  </div>
+                                <div class="form-group">
+                                  <label>Select your drink:</label>
+                                  <select class="form-control">
+                                    <option>Coke Small</option>
+                                    <option>Coke Medium</option>
+                                    <option>Coke Large</option>
+                                    <option>Milkshake Small</option>
+                                    <option>Milkshake Medium</option>
+                                    <option>Milkshake Large</option>
+                                  </select>
+                                </div>
+                                <div>
+                                    <label class="custom-control custom-checkbox">
+                                      <input type="checkbox" class="custom-control-input">
+                                      <span class="custom-control-indicator"></span>
+                                    </label>
+                                </div>
+                                <button 
+                                type="submit" 
+                                class="btn btn-primary btn-lg float-right" 
+                                (click)="onPickFood()"
+                                >Confirm Pick</button>
+                            </form>
+                        </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+

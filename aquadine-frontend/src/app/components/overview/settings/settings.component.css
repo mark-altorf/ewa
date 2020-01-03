@@ -1,0 +1,32 @@
+#usernameBold {
+  font-weight: bold;
+  position: absolute;
+  right: 295px;
+  text-align: left;
+}
+
+#emailBold {
+  font-weight: bold;
+  position: absolute;
+  right: 235px;
+  text-align: left;
+}
+
+#usernameBold2 {
+  font-weight: bold;
+}
+
+#emailBold2 {
+  font-weight: bold;
+}
+
+#password {
+  border: none;
+  border-color: transparent;
+}
+
+input {
+  position: absolute;
+  right: 120px;
+  text-align: left;
+}

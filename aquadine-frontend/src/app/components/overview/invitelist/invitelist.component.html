@@ -1,0 +1,37 @@
+<!-- <div class="card">
+  <div class="card-body">
+      <div *ngIf="invites.length == 0">
+      <div class="col-sm col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">You currently have 0 invites</h5>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+
+    <div *ngIf="invites.length > 0" >
+      <div *ngFor="let invite of invites">
+          <div class="card" style="margin-bottom: 1em;">
+      <div class="card-body">
+        
+          <h5 class="card-title">Open invite: {{invite.name}}</h5>
+          <p class="card-text">Organizer {{invite.organizer}} has started a food invite for {{invite.name}} at {{invite.location}}. Pressing Accept will take you to the menu.</p>
+          <p class="card-text">Invite status: {{ this.status }}</p>
+
+          <button class="btn m-1 btn-primary float-right text" (click)="acceptInvite()" routerLink="/overview/acceptinvite">Accept</button>
+          <button class="btn m-1 btn-danger float-right text" (click)="killInvite()">Decline</button>
+        </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  <!-- </div>
+</div> -->
+

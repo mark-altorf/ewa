@@ -1,0 +1,34 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card rounded-0">
+            <div class="card-header">
+              <h3 class="mb-0">Organize</h3>
+            </div>
+            <div class="form-group">
+              <label for="codes" class="m-2">Choose a restaurant:</label>
+              <form #f="ngForm">
+                <input 
+                  type="text" 
+                  list="codes" 
+                  class="m-2" 
+                  (change)="saveCode($event)">
+                <datalist id="codes">
+                  <option *ngFor="let c of codeList" [value]="c.name">{{c.name}}</option>
+                </datalist>
+              </form>
+              <button 
+                type="submit" 
+                class="btn btn-primary btn-lg float-none m-2" 
+                id="btnAanmaken"
+                routerLink="/menu"
+                >Aanmaken</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

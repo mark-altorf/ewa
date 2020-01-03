@@ -1,0 +1,4 @@
+/* Makes button opaque if form is invalid */
+.ng-invalid button {
+  opacity: 0.3;
+}

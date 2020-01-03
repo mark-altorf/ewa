@@ -1,0 +1,15 @@
+payara5/
+target/
+.settings/
+
+
+
+.project
+.classpath
+.DS_Store
+.svn
+
+*.iml
+*.ipr
+*.iws
+.idea/

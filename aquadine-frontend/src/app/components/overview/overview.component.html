@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-sm col-md-4">
+  
+        <div class="card mb-4">
+          <div class="card-body">
+            
+            <h5 class="card-title text-center">OPTIONS</h5>
+            <p class="card-text">
+              <button type="button" class="btn m-1 btn btn-success w-100" routerLink="/sendinvite"><i class="fa fa-plus"></i>NEW EVENT</button>
+              <button  class="btn m-1 btn btn-outline-primary w-100" routerLink="/overview/settings">PROFILE</button>
+              <button  class="btn m-1 btn btn-outline-primary w-100" (click)="loadInvites()">ADD INVITE (DEV)</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm col-md-6">
+        <app-invite
+          [invites]="invites"
+          (killInviteEmit)="killChild()"
+          (acceptInviteEmit)="acceptChild()"
+        ></app-invite>
+    </div>
+  </div>

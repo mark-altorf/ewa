@@ -1,0 +1,89 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card rounded-0">
+            <div class="card-header">
+              <h3 class=  "mb-0">Personal Details</h3>
+            </div>
+            <div class="card-body">
+              <p>Profile page</p>
+
+              <form [style.display]="!isVisible ? 'block' : 'none'">
+                <ol class="field-list" style="list-style-type:none">
+                  <li class="text-break">
+                    <label>Username:</label>
+                    <label id="usernameBold"> &nbsp; {{settings.username}}</label>
+                  </li>
+
+                  <hr>
+
+                  <li class="text-break">
+                    <label>E-mail:</label>
+                    <label id="emailBold"> &nbsp; {{settings.email}}</label>
+                  </li>
+
+                  <hr>
+
+                  <!--                  <li class="text-break">-->
+                  <!--                    <label>Password:</label>-->
+                  <!--                    <input id="password" type="password" value= "{{settings.password}}">-->
+                  <!--                  </li>-->
+
+                </ol>
+
+                <!--                <button (click)="isVisible = !isVisible"-->
+                <!--                        type="submit"-->
+                <!--                  class="btn btn-outline-warning float-right"-->
+                <!--                >Edit Details</button>-->
+              </form>
+
+              <form [style.display]="isVisible ? 'block' : 'none'">
+                <ol class="field-list" style="list-style-type:none">
+                  <li class="text-break">
+                    <label>Username:</label>
+                    <input type="text" id="username"  value= "{{settings.username}}">
+                  </li>
+
+                  <hr>
+
+                  <li class="text-break">
+                    <label>E-mail:</label>
+                    <input type="email" id="email"  value="{{settings.email}}">
+                  </li>
+
+                  <hr>
+
+                  <li class="text-break">
+                    <label>Old password:</label>
+                    <input type="password" id="oldpassword">
+                  </li>
+
+                  <hr>
+
+                  <li class="text-break">
+                    <label>New password:</label>
+                    <input type="password" id="newpassword" >
+                  </li>
+
+                  <hr>
+
+                  <li class="text-break">
+                    <label>Confirm password:</label>
+                    <input type="password" id="confirmpassword">
+                  </li>
+
+                </ol>
+
+                <!--                <button class="btn btn-outline-success float-right" (click)="updateUser()"-->
+                <!--                >Save</button>-->
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
